@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>拷贝商品网址示例</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/commonStyle.css"/>
+		<script type="text/javascript">
+			(function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			})();
+		</script>
+		<style type="text/css">
+			#main{min-width:320px;max-width:750px;margin:0 auto;}
+			ul{padding-bottom:1.25rem;}
+			ul li{width:93.3%;display: -webkit-box;margin:0.75rem auto 0;}
+			.showleft i.num{display: block;background:url(images/spriteicon.png) no-repeat;background-size:2rem 5rem;width:1.375rem;height:1.375rem;background-position:0 0;}
+			.showleft i.num2{background-position:0 -1.5rem;}
+			.showleft i.num3{background-position:0 -3rem;}
+			.showright{-webkit-box-flex:1;margin-left:0.3rem;font-size:0.75rem;color:#333333;line-height:1rem;}
+			.showright p{padding:0.125rem 0 0.6rem;}
+			.showright p a{color:#0079FF;}
+			.showright .pic{width:12.5rem;padding-left:0.85rem;}
+			.showright .pic img{width:100%;}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<ul>
+				<li>
+					<div class="showleft"><i class="num"></i></div>
+					<div class="showright">
+						<p>点击公众号菜单【买遍全球】，在支持网站中找到<a href="#">美国亚马逊</a>，搜索心仪的商品后打开商品详情</p>
+						<div class="pic">
+							<img src="images/image_1.jpg"/>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="showleft"><i class="num num2"></i></div>
+					<div class="showright">
+						<p>点击右上角的按钮“…”，在弹出层中复制链接</p>
+						<div class="pic">
+							<img src="images/image_2.jpg"/>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="showleft"><i class="num num3"></i></div>
+					<div class="showright">
+						<p>回复该链接到公众号“六城猎人” 即可下单</p>
+						<div class="pic">
+							<img src="images/image_3.jpg"/>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

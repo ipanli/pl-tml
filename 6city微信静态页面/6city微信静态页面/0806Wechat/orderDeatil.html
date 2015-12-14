@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>订单详情</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/orderDetail.css" />
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {  
+				var fontsize = function() {
+					var W = document.body.getBoundingClientRect().width,
+						defaultW = 750,
+						defaultSize = 40;
+					if (W > defaultW) W = defaultW;
+					if (W < 320) W = 320;
+					window.W = W;
+					document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function() {
+					setTimeout(fontsize, 300)
+				});
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			})();
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+			<div class="wrapper">
+				<ul>
+					<li class="detailitems">
+						<div class="orderstatus">
+							<div class="order_row">
+								<div class="rowleft">订单状态：</div>
+								<div class="rowright">
+									<p class="rowbold">即将订购</p>
+									<p class="order_remark expiredtime">保管期至2015.07.24 16:07</p>
+								</div>
+							</div>
+						</div>
+						<div class="logistics">
+							<div class="trans_row">
+								<p class="rowleft">境外物流公司：</p>
+								<p class="rowright">USPS</p>
+							</div>
+							<div class="trans_row">
+								<p class="rowleft">境外物流单号：</p>
+								<p class="rowright"><a href="#">979695910292167453</a></p>
+							</div>
+						</div>
+					</li>
+					<li class="detailitems">
+						<div class="address_detail">
+							<p class="address_info">艾阿碧，13812345678</p>
+							<p>上海上海市普陀区祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+						</div>
+						<div class="logistics transcompany">
+							<div class="trans_row">
+								<p class="rowleft">转运公司：</p>
+								<p class="rowright">笨鸟海淘</p>
+							</div>
+							<div class="trans_row">
+								<p class="rowleft">转运仓：</p>
+								<p class="rowright">美国俄列岗仓库</p>
+							</div>
+							<div class="trans_row">
+								<p class="rowleft">包裹重量：</p>
+								<p class="rowright">1024g</p>
+							</div>
+							<div class="trans_row">
+								<p class="rowleft">备注：</p>
+								<p class="rowright">麻烦包好一点，谢谢！麻烦包好一点，谢谢！麻烦包好一点，谢谢！麻烦包好一点，谢谢！</p>
+							</div>
+						</div>
+					</li>
+					<li class="detailitems">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>美国亚马逊-自营</h3>
+								<span>共3件</span>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+										<a href="#">
+											<img src="images/pic.png"/>
+										</a>
+									</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+										<a href="#">
+											<img src="images/pic.png"/>
+										</a>
+									</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="detailitems">
+						<div class="commodity">
+							<div class="order_row">
+								<div class="rowleft">商品费用：</div>
+								<div class="rowright">
+									<p class="rowbold">RMB 2312.00</p>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="rowleft">商家运费：</div>
+								<div class="rowright">
+									<p class="rowbold">RMB 161.20</p>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="rowleft">国际运费：</div>
+								<div class="rowright">
+									<p class="rowbold">RMB 395.20</p>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="rowleft">关税费用：</div>
+								<div class="rowright">
+									<p class="rowbold">RMB 231.20</p>
+								</div>
+							</div>
+						</div>
+						<div class="parcel">
+							<div class="order_row">
+								<div class="rowleft">包裹号：</div>
+								<div class="rowright">
+									<p>15315156267788523760</p>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="rowleft">提交转运：</div>
+								<div class="rowright">
+									<p>2015.07.22 17:03</p>
+								</div>
+							</div>
+							<div class="order_row">
+								<div class="rowleft">下单时间：</div>
+								<div class="rowright">
+									<p>2015.07.22 17:03</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<footer class="footer">
+			<p>支付关税：<strong>RMB 231.20</strong></p>
+			<a href="#" class="cancelbtn" style="display:none;">取消订单</a>
+			<div class="twobtn">
+				<div><a href="#" class="cancelbtn">取消订单</a></div>
+				<div><a href="#">付款</a></div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var myScroll;
+			function loaded() {
+				myScroll =new iScroll('main');
+			}
+			setTimeout(function (){
+				var height = $(".footer").height();
+				$("#main").css("bottom",height+"px");
+				myScroll.refresh();
+			},500);
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+		</script>
+	</body>
+
+</html>

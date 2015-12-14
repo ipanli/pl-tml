@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+#main{z-index: 1; position: absolute;top: 0;left: 0;width: 100%;bottom: 0rem;overflow: hidden;}
+.wrapper{min-width: 320px; max-width: 750px; margin: 0 auto;padding-bottom:0.5rem;}
+.pay_input{height:2.9rem; background-color:#eeeeee; margin:1.25rem 0.5rem 1rem; border-radius:0.3rem;}
+.pay_input input{ width:100%; font-size:1.25rem; height:1.9rem; line-height:1.9rem; margin-top:0.5rem; vertical-align:middle; text-align:right;}
+.button_pay{display:block; margin:0.75rem 0.5rem; background-color:#ff4d6b; color:#fff; text-decoration:none; height:1.75rem; line-height:1.75rem; text-align:center; font-size:0.8rem; border-radius:0.2rem;}
+.price_error{ height:1.25rem; line-height:1.2rem; color:#fff; padding-left:0.2rem; background-color:#ff4d6b; font-size:0.7rem; position:fixed; bottom:0px; left:0px; width:100%;}
+
+.record_list{ padding:0.5rem; border-bottom:solid 1px #ccc;}
+.record_top{ display:-webkit-box; height:1.2rem; line-height:1.2rem;}
+.icon_j{ display:block; width:0.85rem; height:0.85rem; background:url(../images/jia.gif) no-repeat center; background-size:cover;  margin-right:0.3rem; margin-top:0.15rem;}
+.icon_bg2{ background-image:url(../images/jian.gif)}
+.record_price{display:block; -webkit-box-flex:1; font-size:1.2rem; color:#333; }
+.record_price.red{color:#ff4d6b;}
+.record_time{font-size:0.6rem; color:#656565; display:block;text-align:right;}
+.record_text{ color:#333; font-size:0.6rem; padding:0 1rem; margin-top:0.3rem; line-height:0.8rem;}
+
+.pay_money{ font-size:1.8rem; text-align:center; margin-top:1.8rem; color:#333333;}
+.pay_tip {font-size:0.75rem;color:#333333; text-align:center; margin-top:0.5rem; margin-bottom:1.25rem;}
+.pay_button{display:-webkit-box;}
+.button_a{-webkit-box-flex:1;  height:1.75rem;line-height:1.75rem;text-decoration:none;color:#fff; margin:0 0.5rem; display:block; background-color:#333; border-radius:0.2rem; text-align:center; font-size:0.8rem;}
+.button_a:last-child{background-color:#ff4d6b;}

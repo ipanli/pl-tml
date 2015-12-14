@@ -1,0 +1,17 @@
+1、git  branch  gh-pages 添加分支
+
+2、git  checkout  gh-pages 切换到分支下面   就可以做一些操作了
+
+3、git push origin gh-pages   添加远程
+
+
+
+4、git branch -d  gh-pages 必须切换到别的分支 才能执行此操作
+
+5、git push origin :gh-pages 删除远程分支 
+搞定
+
+
+git stash 
+
+git stash pop

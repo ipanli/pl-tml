@@ -1,0 +1,759 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的订单</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/orderList.css" />
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {
+				var fontsize = function() {
+					var W = document.body.getBoundingClientRect().width,
+						defaultW = 750,
+						defaultSize = 40;
+					if (W > defaultW) W = defaultW;
+					if (W < 320) W = 320;
+					window.W = W;
+					document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function() {
+					setTimeout(fontsize, 300)
+				});
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			})();
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+			<nav class="header">
+				<ul>
+					<li class="on" for="order_list">全部订单</li>
+					<li for="untransorders">待转运<span class="num">12</span></li>
+					<li for="unreceiveorders">待收货<span class="num">0</span></li>
+				</ul>
+			</nav>
+			<section class="orderCont" id="orderCont">
+				<ul class="order_main">
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>即将订购</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo" style="display: none;">
+								<p>备注项有问题</p>
+								<a href="#" class="contESQ">联系客服</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+                                    <div class="productState">
+                                        <div class="pState"><em class="bgred"></em>官方已发货</div>
+                                        <a href="" class="pStateText">查看转运仓库</a>
+                                    </div>
+
+                                    <div class="productState">
+                                        <div class="pState"><em class="bghei"></em>官方已发货</div>
+                                        <a href="" class="pStateText">查看转运仓库</a>
+                                    </div>
+
+                                    <div class="productState">
+                                        <div class="pState colorh"><em class="bghui"></em>已取消</div>
+                                        <a href="" class="pStateText">查看转运仓库</a>
+                                    </div>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>官网订购中</h3>
+								<span style="display:none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p>备注项有问题</p>
+								<a href="#" class="contESQ">联系客服</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<div class="outstock">
+										<p>无货</p>
+										<i>取消订单</i>
+									</div>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>官网订购中</h3>
+								<span style="display:none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p>商家涨价或运费涨价，需补款RMB129.00</p>
+								<a href="#" class="contESQ">付款</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+									<div class="outstock">
+										<p>商家涨价，用户要求取消订单。</p>
+										<i>取消订单</i>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>等待官网发货</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo" style="display: none;">
+								<p>备注项有问题</p>
+								<a href="#" class="contESQ">联系客服</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>官网已发货</h3>
+								<span>查看境外物流</span>
+							</div>
+							<div class="titerrinfo" style="display: none;">
+								<p>备注项有问题</p>
+								<a href="#" class="contESQ">联系客服</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>已入库</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p style="display:none;">备注项有问题</p>
+								<a href="#" class="contESQ">提交转运</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list untransorders">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>即将转运</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo" style="display:none;">
+								<p>备注项有问题</p>
+								<a href="#" class="contESQ">提交转运</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>待付款</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p>共计 <strong>RMB 1412.96</strong></p>
+								<div class="c_p_btn">
+									<div class="cancelorder"><a href="#">取消订单</a></div>
+									<div class="paymentbtn"><a href="#">付款</a></div>
+								</div>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list unreceiveorders">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>转运中</h3>
+								<span style="display: none;">查看境外物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p>地址或身份信息有误，请上传</p>
+								<a href="#" class="contESQ">联系客服</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list unreceiveorders">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>抵达中国</h3>
+								<span>查看境内物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p style="display:none;">地址或身份信息有误，请上传</p>
+								<a href="#" class="contESQ">确认收货</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="order_list">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>已收货</h3>
+								<span style="display: none;">查看境内物流</span>
+							</div>
+							<div class="titerrinfo">
+								<p style="display:none;">地址或身份信息有误，请上传</p>
+								<a href="#" class="contESQ">晒单</a>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+											<a href="#">
+												<img src="images/pic.png"/>
+											</a>
+										</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					
+				</ul>
+			</section>
+		</div>
+		<script type="text/javascript">
+			var myScroll;
+			function loaded() {
+				myScroll =new iScroll('orderCont');
+			}
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			
+			$(".header li").on("tap", function() {
+				var $this = $(this);
+				if ($this.hasClass("on")) {
+					return;
+				} else {
+					var orderstatus = $this.attr("for");
+					$this.addClass("on").siblings().removeClass("on");
+					$(".order_main .order_list").hide();
+					$(".order_main .order_list").each(function (){
+						if($(this).hasClass(orderstatus)){
+							$(this).show();
+						}
+					})
+				}
+				myScroll.refresh();
+			});
+			
+			$(".header li span").each(function() {
+				var num = $(this).text();
+				if (/^\d{1}$/.test(parseInt(num))) {
+					$(this).addClass("grey");
+				} else {
+					$(this).removeClass("grey");
+				}
+			});
+		</script>
+	</body>
+
+</html>

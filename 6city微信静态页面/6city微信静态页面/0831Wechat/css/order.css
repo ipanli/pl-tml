@@ -1,0 +1,33 @@
+@charset "utf-8";
+#main{z-index: 1; position: absolute;top: 0;left: 0;width: 100%;bottom: 7.2rem;overflow: hidden;}
+.wrapper{min-width: 320px; max-width: 750px; margin: 0 auto;padding-bottom:0.5rem;}
+.footer{z-index: 2; position: absolute;left: 0;bottom: 0;width: 100%; background: #000000;}
+.footer .footer_toolbar{padding: 0.375rem 0.25rem;height: 2.5rem;}
+.footer .cal_btn{display: block; background: #FF4D6B; border-radius: 0.125rem;height: 100%; width: 100%;text-align: center; line-height:200%;color: #FFFFFF;font-size: 0.85rem;}
+.footer p{margin:0.75rem 0.5rem 0.5rem;font-size:0.7rem;line-height:0.9rem;color: #EEEEEE;}
+.footer p:nth-last-child(2){margin-top:0.5rem; margin-bottom:0.375rem;color: #FFFFFF;font-size:0.8rem;line-height: 0.9rem;}
+.footer p span{font-weight: bold;}
+ul li.transcompany{border-bottom: solid #CCCCCC 0.06rem;width: 100%;}
+.transcompany .trans_tit{padding:0.5rem 0;display: -webkit-box;position: relative;border-bottom:solid #DDDDDD 0.06rem;background: #F6F6F6;}
+.trans_tit p{font-size:0.65rem;color:#333;line-height:0.8rem;padding-left:0.5rem;}
+.trans_tit .multi_select{-webkit-box-flex: 1;width: 100%;text-align: right;font-size: 0.65rem;color: #888;padding-left: 0.25rem;line-height:0.8rem;}
+.trans_tit .multi_select .font_blue{color:#0079ff;}
+.trans_tit .multi_select>div{position:relative;padding-right:1.1rem;}
+.trans_tit .multi_select .arrow:after{content: '';display: inline-block;width: 0.35rem;height: 0.35rem;position: absolute;right: 0.5rem;top: 28%;border-right: 0.06rem solid #0079FF;border-top: 0.06rem solid #0079FF;-webkit-transform: rotate(45deg);}
+.transcompany .transcon{padding:0.5rem 0.5rem 0.75rem;}
+.transcon .transbox{display:-webkit-box;}
+.transcon p{font-size:0.65rem;line-height:0.85rem;}
+dl{-webkit-box-flex:1;width:100%;display: -webkit-box;}
+dl dt{width:5rem;text-align:center;display:-webkit-box;-webkit-box-align: center;}
+dt img{max-width:5rem;}
+dl dd{-webkit-box-flex:1;padding-left:1rem;}
+dd .trans_name{display:-webkit-box;line-height:1.4rem;}
+.trans_name h6{font-size:0.7rem;color: #333333;font-weight:normal;}
+.trans_name span{display:block;text-align:right;font-size:0.65rem;color:#888888;padding-left:0.15rem;-webkit-box-flex:1;}
+dd .trans_expense{color: #333333;}
+.transcon .bulletin{color: #FF4D6B;padding-top:0.25rem;}
+.wrapper .detailcontent{color: #555555;margin:0.4rem 0 0.25rem;overflow: hidden;padding:0 0.5rem;font-size: 0.65rem;line-height: 0.85rem;}
+.transbox .myicb{display:-webkit-box;-webkit-box-align:center;margin-right:0.45rem;}
+.c_f_checkbox{width:1.05rem; height:1.05rem;-webkit-appearance: none;background-image:url(../images/sprite_radio.png); background-repeat:no-repeat;background-size:2.5rem 3.75rem;margin-right:0.2rem;background-position:0 0;}
+.c_f_checkbox.white{background-position:0 -2.2rem;}
+.c_f_checkbox:checked{background-position:0 -1.1rem;}

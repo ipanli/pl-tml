@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择日中线转运公司</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/commonStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order.css"/>
+		<script type="text/javascript">
+			(function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			
+			})();
+		</script>
+	</head>
+	<body>
+	<div id="main">
+			<div class="wrapper">
+				<ul class="choosetrans">
+					<li class="transcompany">
+						<div class="transcon">
+							<div class="transbox">
+								<div class="myicb">
+									<input type="checkbox" class="c_f_checkbox">
+								</div>
+								<dl>
+									<dt><img src="images/logo_Birdex.jpg"/></dt>
+									<dd>
+										<div class="trans_name"><h6>笨鸟海淘</h6><span>查看详情</span></div>
+										<p class="trans_expense">RMB 49.00/首500g；RMB 0.07/续1g; 6-10个工作日</p>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="transcompany">
+						<div class="transcon">
+							<div class="transbox">
+								<div class="myicb">
+									<input type="checkbox" class="c_f_checkbox">
+								</div>
+								<dl>
+									<dt><img src="images/logo_Trdian.jpg"/><span></span></dt>
+									<dd>
+										<div class="trans_name"><h6>土人殿</h6><span>查看详情</span></div>
+										<p class="trans_expense">RMB 49.00/首500g；RMB 0.07/续1g; 6-10个工作日</p>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer_toolbar">
+				<a href="#" class="cal_btn">确定</a>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var myScroll;
+			function loaded() {
+				myScroll =new iScroll('main');
+			}
+			setTimeout(function (){
+				var height = $(".footer").height();
+				$("#main").css("bottom",height+"px");
+				myScroll.refresh();
+			},500);
+			
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+		</script>
+	</body>
+</html>

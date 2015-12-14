@@ -1,0 +1,11 @@
+@charset "utf-8";*{margin:0;padding:0;outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}html{width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}table{border-collapse:collapse;border-spacing:0}li,ol,ul{list-style:none}em,i{font-style:normal}a,button,input,textarea{border:0;background:0 0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}img{border:0}img,input{vertical-align:middle}
+body{color:#333;font-family:HelveticaNeue,"Microsoft YaHei";background-color:#FFFFFF}a{color:#106fb3;text-decoration:none}a:hover{text-decoration:none}.clearfix:after{clear:both;height:0;overflow:hidden;display:block;visibility:hidden;content:"."}.hide{display:none;}
+
+#main{min-width: 320px; max-width: 720px; margin:0 auto;}
+.paycon{padding:1.5rem 0;}
+.paycon .pic{text-align:center;padding:0 34%;}
+.paycon img{max-height: 6rem;max-width: 6rem;border-radius:0.25rem;}
+.paycon p{text-align: center;font-size: 0.8rem;color: #333333;line-height: 0.8rem;margin:0.75rem 0 0.5rem;}
+.paycon p:last-child{margin: 0;line-height:1.1rem;font-size:0.9rem;font-weight: bold;}
+.paycon p .pername{font-weight: bold;}
+.paybtn{display: block;margin:0 7.3%;background: #FF4D6B;border-radius: 0.125rem;font-size: 0.9rem;color: #FFFFFF;line-height: 1.9rem;text-align: center;height: 1.9rem;}

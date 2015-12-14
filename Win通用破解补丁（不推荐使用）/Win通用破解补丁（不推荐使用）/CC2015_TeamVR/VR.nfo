@@ -1,0 +1,57 @@
+Adobe Creative Cloud 2015
+
+more info http://www.adobe.com/ua/products/creativecloud.html
+
+1. Загрузите и установите в триальном режиме необходимые вам компоненты одним из трех способов:
+
+способ 1: Откройте эту страницу https://helpx.adobe.com/ru/acrobat/kb/acrobat-downloads.html в браузере и не закрывайте еe; загрузите необходимые вам компоненты по ссылках:
+
+	http://trials3.adobe.com/AdobeProducts/APRO/15/win32/Acrobat_DC_Web_WWMUI.exe
+	http://trials3.adobe.com/AdobeProducts/AEFT/13_5/win64/AfterEffects_13_5_LS20.7z 
+	http://trials3.adobe.com/AdobeProducts/AUDT/8/win64/Audition_8_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/DRWV/16/win32/Dreamweaver_16_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/DRWV/16/win64/Dreamweaver_16_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/EDGE/6/win64/Edge_Animate_6_0_0_LS17.exe
+	http://trials3.adobe.com/AdobeProducts/FLPR/15/win64/Flash_Professional_15_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/ILST/19/win32/Illustrator_19_LS20_win32.7z
+	http://trials3.adobe.com/AdobeProducts/ILST/19/win64/Illustrator_19_LS20_win64.7z
+	http://trials3.adobe.com/AdobeProducts/AME/9/win64/AdobeMediaEncoder_9_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/MUSE/2015/win64/Muse_2015_0_CC_LS24.7z
+	http://trials3.adobe.com/AdobeProducts/PHSP/16/win32/Photoshop_16_LS20_win32.7z
+	http://trials3.adobe.com/AdobeProducts/PHSP/16/win64/Photoshop_16_LS20_win64.7z
+	http://trials3.adobe.com/AdobeProducts/LTRM/6/win64/Lightroom_6_LS11.exe
+	http://trials3.adobe.com/AdobeProducts/PRLD/4/win64/Prelude_4_LS20.exe
+	http://trials3.adobe.com/AdobeProducts/PPRO/9/win64/PremierePro_9_LS20.7z
+	http://trials3.adobe.com/AdobeProducts/SPGD/9/win64/SpeedGrade_9_LS20.exe
+
+способ 2: Замените 'User Agent' в качалке или браузере на 'Adobe Application Manager 2.0' и загрузите необходимые вам компоненты по ссылках:
+
+	http://ccmdl.adobe.com/AdobeProducts/APRO/15/win32/Acrobat_DC_Web_WWMUI.exe
+	http://ccmdl.adobe.com/AdobeProducts/AEFT/13_5/win64/AfterEffects_13_5_LS20.7z 
+	http://ccmdl.adobe.com/AdobeProducts/AUDT/8/win64/Audition_8_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/CPTV/9/win32/Captivate_9_LS21.7z
+	http://ccmdl.adobe.com/AdobeProducts/DRWV/16/win32/Dreamweaver_16_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/DRWV/16/win64/Dreamweaver_16_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/EDGE/6/win64/Edge_Animate_6_0_0_LS17.exe
+	http://ccmdl.adobe.com/AdobeProducts/FLPR/15/win64/Flash_Professional_15_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/ILST/19/win32/Illustrator_19_LS20_win32.7z
+	http://ccmdl.adobe.com/AdobeProducts/ILST/19/win64/Illustrator_19_LS20_win64.7z
+	http://ccmdl.adobe.com/AdobeProducts/AME/9/win64/AdobeMediaEncoder_9_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/MUSE/2015/win64/Muse_2015_0_CC_LS24.7z
+	http://ccmdl.adobe.com/AdobeProducts/PHSP/16/win32/Photoshop_16_LS20_win32.7z
+	http://ccmdl.adobe.com/AdobeProducts/PHSP/16/win64/Photoshop_16_LS20_win64.7z
+	http://ccmdl.adobe.com/AdobeProducts/LTRM/6/win64/Lightroom_6_LS11.exe
+	http://ccmdl.adobe.com/AdobeProducts/PRLD/4/win64/Prelude_4_LS20.exe
+	http://ccmdl.adobe.com/AdobeProducts/PPRO/9/win64/PremierePro_9_LS20.7z
+	http://ccmdl.adobe.com/AdobeProducts/SPGD/9/win64/SpeedGrade_9_LS20.exe
+
+способ 3 (для быстрого Интернета): загрузите и установите менеджер Creative Cloud
+ 	https://creative.adobe.com/ru/products/download/creative-cloud?version=3.0 
+	и с его помощью в онлайне установите необходимые компоненты (дистрибутивы локально не сохраняются)
+
+2. Примените Anticloud …
+
+Team V.R
+
+
+ЗЫ применяйте Anticloud после каждого апдейта

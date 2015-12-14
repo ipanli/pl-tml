@@ -1,0 +1,53 @@
+@charset "utf-8";
+#main{z-index: 1; position: absolute;top: 0;left: 0;width: 100%;bottom: 2.75rem;overflow: hidden;}
+.wrapper{min-width: 320px; max-width: 750px; margin: 0 auto;}
+.footer{z-index: 2; position: absolute;left: 0;bottom: 0;width: 100%; background: #ff6d7f;padding-top:0.1rem}
+.footer .totalprice{background:#f8f8f8;height:2.75rem;overflow:hidden;width:100%;display:-webkit-box;padding:0.45rem 0;}
+.checkall{padding:0.375rem 0.5rem 0;color:#333;font-size:0.7rem;}
+.c_f_checkbox{width:1.05rem; height:1.05rem;-webkit-appearance: none;background-image:url(../images/sprite_radio.png); background-repeat:no-repeat;background-size:2.5rem 3.75rem;margin-right:0.2rem;background-position:0 0;}
+.c_f_checkbox.white{background-position:0 -2.2rem;}
+.c_f_checkbox:checked{background-position:0 -1.1rem;}
+.totalprice .submit{text-align:center;display:block;background-color:#ff4d6b;color:#FFFFFF;margin:0.06rem 0.25rem 0.06rem 0.5rem;height:1.75rem;line-height:1.75rem;width:18.7%;border-radius:0.125rem;font-size:0.75rem;}
+.totalprice .realprice{-webkit-box-flex:1;text-align:right;width:100%;color:#333333;font-size:0.65rem;}
+.realprice p:first-child{font-weight:bold;font-size:0.8rem;}
+
+.order_main .order_list{background:#FFFFFF;overflow:hidden;border-bottom:solid #CCCCCC 0.06rem;}
+.order_main .order_list:last-child{border-bottom:none;}
+.order_list .order_shop{display:-webkit-box;background:#F6F6F6;border-bottom:solid #dedede 0.06rem;padding:0.5rem;line-height:1rem;}
+.order_shop .titinfo{-webkit-box-flex:1;}
+.titinfo input{margin-right:0.45rem;}
+.titinfo span{font-size:0.7rem;color:#333333;font-weight:normal;}
+.order_shop .titeditor{font-size:0.75rem;color:#888;}
+.order_shop .titeditor.complete{color:#0079FF;}
+.order_main .item_main .item_list{padding:0.375rem 0.5rem;border-bottom:solid 0.06rem #DDDDDD;position:relative;}
+.item_main .item_list .overlay{position:absolute;left:0;top:0;background:rgba(246,246,246,0.7);width:100%;height:100%;}
+.order_main .item_main .item_box{display:-webkit-box;}
+.item_main .myicb input{margin:1.5rem 0.45rem 0 0;}
+.item_box dl{-webkit-box-flex:1;width:100%;display: -webkit-box;}
+.item_box dt a{width:4rem;height:4rem;border:solid 0.06rem #CCCCCC;text-align:center;display:table-cell;vertical-align:middle;}
+.item_box dt a img{max-width:3.88rem;max-height:3.88rem;}
+.item_box dd{padding-left:0.5rem;-webkit-box-flex:1;color:#333333;}
+.item_box dd .ddetails{display:table;min-height:4rem;}
+.ddetails .ddetails_inner{vertical-align:middle;display:table-cell;}
+.item_box dd h4{font-size:0.65rem;line-height:0.8rem;font-weight:normal;}
+.item_box dd .sub_price{font-size:0.75rem;margin:0.25rem 0;display:-webkit-box;}
+.item_box dd .sub_price span{display:block;line-height:1rem;}
+.item_box dd .sub_price .s_pri{-webkit-box-flex:1;}
+.item_box .sub_price .addon{background:#FF6D7F;color:#FFFFFF;font-size:0.55rem;padding:0 0.3rem;text-align:center;}
+.item_box dd .sub_price em{margin:0 0.5rem;}
+.item_box dd .skuprops,.item_box dd .item_remark{font-size:0.65rem;color:#666666;line-height:0.9rem;margin:0.25rem 0;}
+.item_box dd .item_remark{margin:0;}
+.order_list .merchantrans{text-align:right;font-size:0.7rem;color:#333333;margin:0.45rem 0.5rem;}
+.merchantrans b{margin-left:0.35rem;}
+.item_list .overlay span{position:absolute;left:2rem;top:1.875rem;height:1rem;width:4rem;font-size:0.6rem;background:#888888;color:#FFFFFF;line-height:1rem;text-align:center;}
+.item_list .item_operate{display:-webkit-box;padding-left:0.5rem;height:1.45rem;line-height:1.45rem;margin:0.5rem 0 0;}
+.item_operate .delitem{display:block;color:#FF3333;font-size:0.75rem;}
+.item_operate .goodsamount{-webkit-box-flex:1;display: -webkit-box;}
+.item_operate .amounts{font-size: 0.7rem;color: #333;}
+.item_operate .amounts b{margin:0 0.35rem;}
+.item_operate .modifyamount{-webkit-box-flex:1;display:-webkit-box;margin-left:0.75rem;}
+.btnadd, .btnminus{display: block;height: 1.45rem;width:2.35rem;line-height: 1.45rem;border: 0.06rem solid #007aff;color: #007aff;text-align: center; background: url(../images/icon_add.png) no-repeat center;background-size:0.8rem 0.8rem;}
+.btnminus{border-radius:0.2rem 0 0 0.2rem; background-image: url(../images/icon_minus.png);}
+.btnadd{border-left:0;border-radius: 0 0.2rem 0.2rem 0;}
+.btnaddisable{background-image: url(../images/icon_add_disable .png);}
+.btnminusdisable{background-image: url(../images/icon_minus_disable.png);}

@@ -1,0 +1,50 @@
+PraiseNum 点赞记录总数
+ReplyCommentNum 回复记录总数
+RCList 回复列表
+PList  点赞列表
+DateCreate 发帖多少天
+
+
+帖子详情
+PostID     帖子ID
+pPageIndex 点赞当前页数
+pPageSize  点赞当前页记录数
+cPageIndex  评论当前页
+cPageSize   评论当前页记录数
+http://h5.panli.com/Script/GetPostInfo?postID=55e51eb4ff8360812030f632&pPageIndex=1&pPageSize=10&cPageIndex=1&cPageSize=20
+
+
+敏感词
+http://h5.panli.com/Script/GetSensitiveWordsList
+
+
+点赞
+PostID 帖子ID
+UserID 用户ID
+http://h5.panli.com/Script/PraisePost?PostID=&UserID=
+
+
+删帖
+PostID 帖子ID
+UserID 用户ID
+http://h5.panli.com/Script/RemovePost?PostID=&UserID=
+
+
+回帖
+PostID 帖子ID
+UserID 用户ID
+ReplyID 被回复者ID
+Content 内容
+AnonymousNumber 手机唯一值
+http://h5.panli.com/Script/CommontOrReplyPost?PostID=55db002fff83603e4050aa48&UserID=&ReplyID=&Content=hello&AnonymousNumber=12121212
+
+
+帖子详情页面地址
+http://h5.panli.com/Community/PostsInfo
+
+
+172.20.6.172:8905
+http://service.panli.com/
+
+
+CheckGagUsers

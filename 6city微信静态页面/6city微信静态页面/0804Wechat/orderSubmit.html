@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>提交转运</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/commonStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/orderSubmit.css" />
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {  
+				var fontsize = function() {
+					var W = document.body.getBoundingClientRect().width,
+						defaultW = 750,
+						defaultSize = 40;
+					if (W > defaultW) W = defaultW;
+					if (W < 320) W = 320;
+					window.W = W;
+					document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function() {
+					setTimeout(fontsize, 300)
+				});
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="wrapper">
+				<ul>
+					<li class="merchandiseitem">
+						<ul class="addressList">
+							<li>
+								<span>收件人：</span><span>艾阿碧</span>
+							</li>
+							<li>
+								<span>联系电话：</span><span class="cellbold">13812345678</span>
+							</li>
+							<li>
+								<span>身份证号：</span><span>3101**********1234</span> 	
+							</li>
+							<li>
+								<span>收货地址：</span><span>上海上海市普陀区祁连山南路2891弄100号盛源科技园A座4楼</span>
+							</li>
+							<li>
+								<span>邮政编号：</span><span>200331</span>
+							</li>
+						</ul>
+					</li>
+					<li class="merchandiseitem">
+						<ul class="transcompany">
+							<li>
+								<span>转运公司：</span><span class="cellbold">笨鸟海淘</span>
+							</li>
+							<li>
+								<span>转运仓：</span><span>美国俄勒冈仓库</span>
+							</li>
+						</ul>
+						<ul class="transcompany freightexpens">
+							<li>
+								<span>总重量：</span><span class="cellbold">1700g</span>
+							</li>
+							<li>
+								<span>国际运费：</span><span class="cellbold">RMB 359.60</span>
+							</li>
+							<li>
+								<span>仓储费用：</span><span class="cellbold">RMB 0.00</span>
+							</li>
+						</ul>
+						<div class="mergebox">
+							<p>合箱</p>
+							<div class="multi_select">
+								<div class="arrow">
+									<span class="font_blue">已选择2个包裹</span>
+								</div>
+							</div>
+						</div>
+						<div class="remarkcon">
+							<div class="remarktxt c_tx2 " contenteditable="true" id="content_content">麻烦帮我包装好一些哦，千万不要坏哦，快递的小哥一定要长得帅哦，thx。</div>
+							<div class="remarktxt c_tx3 hide" contenteditable="true" id="substitutor_content">备注，如：运输方面的特别要求</div>
+						</div>
+					</li>
+					<li class="merchandiseitem">
+						<div class="order_tit">
+							<div class="titinfo">
+								<h3>美国亚马逊-自营</h3>
+								<span>1700g</span>
+							</div>
+						</div>
+						<ul class="item_main">
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+										<a href="#">
+											<img src="images/pic.png"/>
+										</a>
+									</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="item_list">
+								<div class="item_box">
+									<dl>
+										<dt>
+										<a href="#">
+											<img src="images/pic.png"/>
+										</a>
+									</dt>
+										<dd>
+											<div class="ddetails">
+												<div class="ddetails_inner">
+													<h4>Torn by Ronny Kobo Roseanna Embossed Knit Dress</h4>
+													<div class="sub_price">
+														<span class="s_pri"><b>RMB 706.48</b><em>×</em><b>1</b></span>
+													</div>
+													<p class="skuprops">Blue, Small</p>
+													<p class="item_remark">客服小哥长得很帅服务很好，结婚了嘛？留个手机/微信/陌陌怎么样？</p>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>国际运费总价 <span class="rmbbold">RMB 359.60</span></p>
+			<a href="#" class="cal_btn">微信支付</a>
+		</footer>
+		<script type="text/javascript">
+			var myScroll;
+			function loaded() {
+				myScroll =new iScroll('main');
+			}
+			$(".c_tx3").focus(function(){
+				$(this).hide();
+				$(this).siblings(".c_tx2").show().focus();
+				myScroll.refresh();
+			});
+			$(".c_tx2").blur(function(){
+				if($(this).html() == ""){
+					$(this).hide();
+					$(this).siblings(".c_tx3").show();
+				}
+				myScroll.refresh();
+			});
+			setTimeout(function (){
+				var height = $(".footer").height();
+				$("#main").css("bottom",height+"px");
+				myScroll.refresh();
+			},500);
+			
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+		</script>
+	</body>
+</html>
